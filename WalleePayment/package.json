@@ -11,7 +11,8 @@
     "package:ios": "rock package:ios --scheme WalleePaymentReact --configuration Release",
     "package:aar": "rock package:aar --variant Release --module-name walleepaymentreact",
     "publish-local:aar": "pnpm package:aar && rock publish-local:aar --module-name walleepaymentreact",
-    "release:android": "./scripts/buildAndPublish.sh"
+    "release:android": "./scripts/buildAndPublish.sh",
+    "release:ios": "./scripts/build-xcframework.sh"
   },
   "dependencies": {
     "@callstack/react-native-brownfield": "^1.2.0",

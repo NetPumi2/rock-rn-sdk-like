@@ -1,0 +1,66 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "WalleePaymentReact",
+    "printedName": "WalleePaymentReact",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "ReactBrownfield",
+        "printedName": "ReactBrownfield",
+        "declKind": "Import",
+        "moduleName": "WalleePaymentReact",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "ReactNativeBundle",
+        "printedName": "ReactNativeBundle",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bundle",
+            "printedName": "Foundation.Bundle",
+            "usr": "c:objc(cs)NSBundle"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:18WalleePaymentReact0C12NativeBundleSo8NSBundleCvp",
+        "mangledName": "$s18WalleePaymentReact0C12NativeBundleSo8NSBundleCvp",
+        "moduleName": "WalleePaymentReact",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:18WalleePaymentReact0C12NativeBundleSo8NSBundleCvg",
+            "mangledName": "$s18WalleePaymentReact0C12NativeBundleSo8NSBundleCvg",
+            "moduleName": "WalleePaymentReact",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

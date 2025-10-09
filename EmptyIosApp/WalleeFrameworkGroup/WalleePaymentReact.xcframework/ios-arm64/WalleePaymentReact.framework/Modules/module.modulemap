@@ -1,0 +1,6 @@
+framework module WalleePaymentReact {
+  umbrella header "WalleePaymentReact.h"
+  export *
+
+  module * { export * }
+}
