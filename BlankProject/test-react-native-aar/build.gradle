@@ -1,0 +1,4 @@
+def aarName = 'walleepaymentreact-release.aar'
+
+configurations.maybeCreate("default")
+artifacts.add("default", file(aarName))
