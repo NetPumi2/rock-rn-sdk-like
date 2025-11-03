@@ -40,7 +40,7 @@ publishing {
         create<MavenPublication>("mavenAar") {
             groupId = "com.walleepaymentreact"
             artifactId = "walleepayment"
-            version = "0.0.1-local"
+            version = "0.0.5-turbo-modules-newpackage"
             afterEvaluate {
                 from(components.getByName("default"))
             }
