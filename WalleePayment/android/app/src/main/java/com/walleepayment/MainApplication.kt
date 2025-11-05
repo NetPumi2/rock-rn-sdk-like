@@ -9,7 +9,9 @@ import com.facebook.react.ReactNativeHost
 import com.facebook.react.ReactPackage
 import com.facebook.react.defaults.DefaultReactHost.getDefaultReactHost
 import com.facebook.react.defaults.DefaultReactNativeHost
-import com.walleepayment.modules.NativeTestingTextPackage
+import com.example.mylibrary.TestingLib
+import com.walleepayment.modules.ReactNativeTestingTextPackage
+
 
 class MainApplication : Application(), ReactApplication {
 
@@ -19,7 +21,8 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
-                add(NativeTestingTextPackage())
+                add(ReactNativeTestingTextPackage())
+
             }
 
         override fun getJSMainModuleName(): String = "index"
@@ -36,5 +39,6 @@ class MainApplication : Application(), ReactApplication {
   override fun onCreate() {
     super.onCreate()
     loadReactNative(this)
+      TestingLib().showLog("APPLICATION IN APP")
   }
 }

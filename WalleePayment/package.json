@@ -20,6 +20,11 @@
     "jsSrcsDir": "modulesSpecs",
     "android": {
       "javaPackageName": "com.walleepayment.modules"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeTestingText": "RCTNativeTestingText"
+      }
     }
   },
   "dependencies": {

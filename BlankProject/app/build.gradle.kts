@@ -50,7 +50,7 @@ dependencies {
 //    implementation("com.walleepaymentreact:walleepayment:0.0.2-turbo-modules")
 //    implementation("com.walleepaymentreact:walleepayment:0.0.3-turbo-modules")
 //    implementation("com.walleepaymentreact:walleepayment:0.0.4-turbo-modules-imports")
-    implementation("com.walleepaymentreact:walleepayment:0.0.5-turbo-modules-newpackage")
+    implementation("com.walleepaymentreact:walleepayment:0.0.14-starter")
 
 
     implementation(libs.androidx.core.ktx)

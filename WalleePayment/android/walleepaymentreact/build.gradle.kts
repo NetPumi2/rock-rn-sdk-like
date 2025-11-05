@@ -40,7 +40,7 @@ publishing {
         create<MavenPublication>("mavenAar") {
             groupId = "com.walleepaymentreact"
             artifactId = "walleepayment"
-            version = "0.0.5-turbo-modules-newpackage"
+            version = "0.0.14-starter"
             afterEvaluate {
                 from(components.getByName("default"))
             }
@@ -70,6 +70,9 @@ publishing {
 dependencies {
     api("com.facebook.react:react-android:0.80.0")
     api("com.facebook.react:hermes-android:0.80.0")
+//    api("path: ")
+//    api(":mylibrary")
+//        api(":mylibrary")
 }
 
 val moduleBuildDir: Directory = layout.buildDirectory.get()
