@@ -40,7 +40,7 @@ publishing {
         create<MavenPublication>("mavenAar") {
             groupId = "com.walleepaymentreact"
             artifactId = "walleepayment"
-            version = "0.0.14-starter"
+            version = "0.0.15-composable"
             afterEvaluate {
                 from(components.getByName("default"))
             }

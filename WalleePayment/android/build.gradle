@@ -10,12 +10,18 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+
+        gradlePluginPortal()
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
         classpath("com.callstack.react:brownfield-gradle-plugin:0.5.0")
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.21"
+        classpath "org.jetbrains.kotlin:compose-compiler-gradle-plugin:2.0.21"
+
     }
 }
 
