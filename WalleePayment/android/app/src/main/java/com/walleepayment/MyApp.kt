@@ -1,6 +1,8 @@
 package com.walleepayment
 
 import android.app.Application
+//import com.walleepaymentreact.ReactNativeHostManager
+import com.walleepaymentreact.WalleeStartSdk
 
 class MyApp : Application() {
 
@@ -9,7 +11,7 @@ class MyApp : Application() {
         super.onCreate()
 
 //        ReactNativeHostManager.initialize(this)
-//        WalleeStartSdk.init(application = this)
+        WalleeStartSdk.init(application = this)
 
     }
 }

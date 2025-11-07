@@ -60,6 +60,11 @@ android {
     }
 }
 
+repositories {
+    mavenLocal()
+//    mavenCentral()
+}
+
 
 configurations.all {
     resolutionStrategy.force("androidx.activity:activity-compose:1.9.3")
@@ -112,6 +117,11 @@ dependencies {
 
 //    project(":mylibrary")
 //    api project(path: ':mylibrary')
+//    api project(path: ':walleepaymentreact')
+//    implementation(project(":walleepaymentreact"))
+//    add("debugEmbed", project(":walleepaymentreact"))
+    implementation("com.walleepaymentreact:walleepayment:0.0.16-composable")
+
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

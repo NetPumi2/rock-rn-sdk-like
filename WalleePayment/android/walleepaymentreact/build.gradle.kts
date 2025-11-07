@@ -40,7 +40,7 @@ publishing {
         create<MavenPublication>("mavenAar") {
             groupId = "com.walleepaymentreact"
             artifactId = "walleepayment"
-            version = "0.0.15-composable"
+            version = "0.0.16-composable"
             afterEvaluate {
                 from(components.getByName("default"))
             }
@@ -70,9 +70,8 @@ publishing {
 dependencies {
     api("com.facebook.react:react-android:0.80.0")
     api("com.facebook.react:hermes-android:0.80.0")
-//    api("path: ")
-//    api(":mylibrary")
-//        api(":mylibrary")
+    api("androidx.constraintlayout:constraintlayout:2.1.4")
+
 }
 
 val moduleBuildDir: Directory = layout.buildDirectory.get()
