@@ -16,16 +16,21 @@
   return @"NativeTestingText";
 }
 
+- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:(const facebook::react::ObjCTurboModule::InitParams &)params {
+  return std::make_shared<facebook::react::NativeTestingTextSpecJSI>(params);
+}
 
-- (NSString * _Nullable)getSomeText {
+
+
+- (NSString *)getSomeText {
   return @"Hello from React Native... getSomeText FCN";
 }
 
-- (NSString * _Nullable)getSomeOtherText {
+- (NSString *)getSomeOtherText {
   return @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. ... getSomeOtherText FCN";
 }
 
-- (NSString * _Nullable)getGreeting:(NSString * _Nullable)name {
+- (NSString *)getGreeting:(NSString *)name {
   return [NSString stringWithFormat:@"Hello %@ !!!!!! getGreeting FCN", name ?: @""];
 }
 
