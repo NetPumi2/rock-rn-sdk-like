@@ -36,6 +36,21 @@ class MainActivity : ComponentActivity() {
                         text = "Open RN activity",
                         onClick = { WalleeStartSdk.instance?.lunch(context) }
                     )
+                    BasicButton(
+                        modifier = Modifier.align(Alignment.BottomCenter),
+                        text = "Log from module",
+                        onClick = {
+                            WalleeStartSdk.instance?.testLog()
+                        }
+                    )
+
+                    BasicButton(
+                        modifier = Modifier.align(Alignment.TopEnd),
+                        text = "Log from module",
+                        onClick = {
+                            WalleeStartSdk.instance?.netceteraSdkInitLog()
+                        }
+                    )
                 }
             }
         }

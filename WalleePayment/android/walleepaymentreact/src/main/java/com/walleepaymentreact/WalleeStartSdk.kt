@@ -4,7 +4,10 @@ import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import com.example.mylibrary.TestingLib
 import com.walleepaymentreact.activity.ReactActivity
+import ch.twint.payment.sdk.Twint
+import com.netcetera.threeds.sdk.ThreeDS2ServiceInstance
 
 class WalleeStartSdk private constructor(application: Application) {
 
@@ -27,5 +30,15 @@ class WalleeStartSdk private constructor(application: Application) {
         context.startActivity(mainReactActivityIntent)
 
     }
+
+    fun testLog() {
+        TestingLib().showLog("TADYYYYYYYYYYY===============")
+    }
+
+    fun netceteraSdkInitLog() {
+        val three = ThreeDS2ServiceInstance.get()
+        Log.e("XXXX", "============================NETCETERA SDK VERSION" + three.sdkVersion)
+    }
+
 
 }

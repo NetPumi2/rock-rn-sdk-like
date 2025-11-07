@@ -1,0 +1,4 @@
+def aarName = 'netcetera-sdk-2.4.1.1.aar'
+
+configurations.maybeCreate("default")
+artifacts.add("default", file(aarName))
