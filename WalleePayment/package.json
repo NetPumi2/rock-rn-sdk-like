@@ -14,6 +14,19 @@
     "release:android": "./scripts/buildAndPublish.sh",
     "release:ios": "./scripts/build-xcframework.sh"
   },
+  "codegenConfig": {
+    "name": "NativeTestingTextSpec",
+    "type": "modules",
+    "jsSrcsDir": "modulesSpecs",
+    "android": {
+      "javaPackageName": "com.walleepayment.modules"
+    },
+    "ios": {
+      "modulesProvider": {
+        "NativeTestingText": "RCTNativeTestingText"
+      }
+    }
+  },
   "dependencies": {
     "@callstack/react-native-brownfield": "^1.2.0",
     "react": "19.1.0",

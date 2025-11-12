@@ -1,5 +1,5 @@
-import WelcomeScreen from '@rock-js/welcome-screen';
+import HelloScreen from './src/HelloScreen';
 
 export default function App() {
-  return <WelcomeScreen />;
+  return <HelloScreen />;
 }

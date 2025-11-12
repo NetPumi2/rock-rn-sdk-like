@@ -1,0 +1,4 @@
+def aarName = 'twint-sdk-android-8.0.0.aar'
+
+configurations.maybeCreate("default")
+artifacts.add("default", file(aarName))

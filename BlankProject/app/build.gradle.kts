@@ -44,7 +44,13 @@ dependencies {
 
 //    implementation(project(":test-react-native-aar"))
 
-    implementation("com.walleepaymentreact:walleepayment:0.0.1-local")
+
+    // you have to build this version in WalleePayment project and release to maven local there is script for it
+//    implementation("com.walleepaymentreact:walleepayment:0.0.1-local")
+//    implementation("com.walleepaymentreact:walleepayment:0.0.2-turbo-modules")
+//    implementation("com.walleepaymentreact:walleepayment:0.0.3-turbo-modules")
+//    implementation("com.walleepaymentreact:walleepayment:0.0.4-turbo-modules-imports")
+    implementation("com.walleepaymentreact:walleepayment:0.0.15-composable")
 
 
     implementation(libs.androidx.core.ktx)

@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.callstack.reactnativebrownfield.ReactNativeFragment
+import com.walleepaymentreact.WalleeStartSdk
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +28,11 @@ class MainActivity : AppCompatActivity() {
         val rnAppFragment = ReactNativeFragment.createReactNativeFragment("WalleePayment")
 
         showRNAppBtn.setOnClickListener {
-            supportFragmentManager
-                .beginTransaction()
-                .replace(R.id.fragmentContainer, rnAppFragment)
-                .commit()
+        WalleeStartSdk.instance?.lunch(this)
+//            supportFragmentManager
+//                .beginTransaction()
+//                .replace(R.id.fragmentContainer, rnAppFragment)
+//                .commit()
         }
 
 
